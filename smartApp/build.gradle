@@ -1,0 +1,45 @@
+group 'smartapp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: "io.ratpack.ratpack-groovy"
+
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.ratpack:ratpack-gradle:1.5.0"
+    }
+}
+
+dependencies {
+
+    runtime 'com.lmax:disruptor:3.3.2'
+
+    runtime 'junit:junit:4.12'
+
+    testCompile ratpack.dependency('groovy-test')
+
+    testCompile ('org.spockframework:spock-core:1.0-groovy-2.4') {
+        exclude module: "groovy-all"
+    }
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.testng:testng:6.9.10'
+}
+
+dependencies {
+    compile ratpack.dependency("dropwizard-metrics")
+}
+
+test {
+	//we want display the following test events
+    testLogging {
+        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+    }
+}
