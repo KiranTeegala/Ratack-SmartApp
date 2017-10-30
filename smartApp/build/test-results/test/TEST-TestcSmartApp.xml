@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestcSmartApp" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T03:19:15" hostname="HIUSA69590" time="4.684">
+<testsuite name="TestcSmartApp" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T03:54:56" hostname="HIUSA69590" time="4.417">
   <properties/>
-  <testcase name="Should render '200' from ratpack.groovy" classname="TestcSmartApp" time="3.963"/>
-  <testcase name="testing POST service" classname="TestcSmartApp" time="0.721"/>
-  <system-out><![CDATA[Ratpack started (development) for http://localhost:61106
+  <testcase name="Should render '200' from ratpack.groovy" classname="TestcSmartApp" time="3.604"/>
+  <testcase name="testing POST service" classname="TestcSmartApp" time="0.813"/>
+  <system-out><![CDATA[Ratpack started (development) for http://localhost:61591
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
